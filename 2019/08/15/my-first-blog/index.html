@@ -7,14 +7,17 @@
   
   <title>my first blog | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="[TOC] 一. 常量   python常量包括数字、字符串、布尔值、空值等 1.数字 整数：Python可以处理任意大小的整数，当然包括负整数，在程序中表示的方法和数学上写法一模一样，例如1，99，-180，0，等等    Python是一门弱类型语言，系统会自动推导出正确的类型，不用定义类型 123a=10int a=10  #错误不用定义类型  长整数：Python的长整数的取值范围与计算机">
+<meta property="og:type" content="article">
 <meta property="og:title" content="my first blog">
 <meta property="og:url" content="http://yoursite.com/2019/08/15/my-first-blog/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 一. 常量   python常量包括数字、字符串、布尔值、空值等 1.数字 整数：Python可以处理任意大小的整数，当然包括负整数，在程序中表示的方法和数学上写法一模一样，例如1，99，-180，0，等等    Python是一门弱类型语言，系统会自动推导出正确的类型，不用定义类型 123a=10int a=10  #错误不用定义类型  长整数：Python的长整数的取值范围与计算机">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-15T06:11:34.841Z">
+<meta property="og:updated_time" content="2019-08-15T06:37:27.992Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="my first blog">
+<meta name="twitter:description" content="[TOC] 一. 常量   python常量包括数字、字符串、布尔值、空值等 1.数字 整数：Python可以处理任意大小的整数，当然包括负整数，在程序中表示的方法和数学上写法一模一样，例如1，99，-180，0，等等    Python是一门弱类型语言，系统会自动推导出正确的类型，不用定义类型 123a=10int a=10  #错误不用定义类型  长整数：Python的长整数的取值范围与计算机">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,7 +67,7 @@
         <section id="main"><article id="post-my-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/15/my-first-blog/" class="article-date">
-  <time datetime="2019-08-15T06:11:34.000Z" itemprop="datePublished">2019-08-15</time>
+  <time datetime="2019-08-15T06:37:01.000Z" itemprop="datePublished">2019-08-15</time>
 </a>
     
   </div>
@@ -83,11 +86,77 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>[TOC]</p>
+<h1 id="一-常量"><a href="#一-常量" class="headerlink" title="一. 常量"></a>一. 常量</h1><p>   python常量包括数字、字符串、布尔值、空值等</p>
+<h2 id="1-数字"><a href="#1-数字" class="headerlink" title="1.数字"></a>1.数字</h2><ul>
+<li><p><strong>整数</strong>：<br>Python可以处理任意大小的整数，当然包括负整数，在程序中表示的方法和数学上写法一模一样，例如<code>1</code>，<code>99</code>，<code>-180</code>，<code>0</code>，等等</p>
+<p>   Python是一门弱类型语言，系统会自动推导出正确的类型，不用定义类型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">10</span></span><br><span class="line"></span><br><span class="line">int a=<span class="number">10</span>  <span class="comment">#错误不用定义类型</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>长整数</strong>：<br>Python的长整数的取值范围与计算机支持的虚拟内存大小有关，也就是说Python可以表示非常大的整数</p>
+</li>
+<li><p><strong>浮点数：</strong><br>浮点数可以用数学写法，如<code>1.2</code>，<code>-1.2</code>，<code>0.23</code>，等等。但是对于很大或是很小的浮点数，就必须用科学计数法表示，把10用e代替，4.56*10^9^表示为<code>4.56e9</code>0.0000000002表示为<code>0.2e-9</code></p>
+</li>
+</ul>
+<h2 id="2-字符串："><a href="#2-字符串：" class="headerlink" title="2.字符串："></a>2.字符串：</h2><p>字符串常量使用单引号<code>&#39;</code>或者双引号<code>&quot;</code>括起来</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'我是一个字符串'</span></span><br><span class="line"><span class="string">"我是一个字符串"</span></span><br><span class="line"><span class="string">'123'</span></span><br><span class="line"><span class="string">"a"</span></span><br></pre></td></tr></table></figure>
+
+<p>如果需要在单引号括起来的字符串中使用单引号和双引号，python会分不清字符串里面的单引号或者是双引号是否表示字符串的结束，这时就需要使用转义字符<code>\</code>来辅助表示</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'I\'m \"ok\"!'</span></span><br></pre></td></tr></table></figure>
+
+<p>运行的结果为</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">I<span class="string">'m "OK"!</span></span><br></pre></td></tr></table></figure>
+
+<p>字符串可以转义很多的字符，python的常用转义字符<br>|转义字符| 具体描述 |<br>|–|–|<br>|   \n | 换行 |<br>|\r|回车|<br>| \ ‘ | ‘ |<br>|\ “|”|<br>| \ \  |  \ |<br>|  \ (在行尾时)  |  续行符   |<br>|  \a  | 响铃   |<br>|  \b  |   退格（Backspace）  |<br>| \000 | 空格 |<br>| \v   |  纵向制表符  |<br>|  \t  |  横向制表符  |</p>
+<ul>
+<li>如果字符串里面有很多字符都需要转义，就需要加很多<code>\</code>，为了简化，Python还允许用<code>r&#39;&#39;</code>表示<code>&#39;&#39;</code>内部的字符串默认不转义</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">r'\\\t\\'</span>)</span><br><span class="line">print(<span class="string">'\\\t\\'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\\\t\\</span><br><span class="line">\	\</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果字符串内部有很多换行，用<code>\n</code>写在一行里不好阅读，为了简化，Python允许用<code>&#39;&#39;&#39;  ...&#39;&#39;&#39;</code>的格式表示多行内容</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'''游泳</span></span><br><span class="line"><span class="string">游玩</span></span><br><span class="line"><span class="string">游戏'''</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">游泳</span><br><span class="line">游玩</span><br><span class="line">游戏</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-布尔值："><a href="#3-布尔值：" class="headerlink" title="3.布尔值："></a>3.布尔值：</h2><p>在Python中可以直接用<code>True</code>、<code>False</code>表示布尔值（==注意大小写==）</p>
+<p>也可以通过布尔运算计算出来：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a=<span class="number">3</span>&gt;<span class="number">4</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b=<span class="number">3</span>&gt;<span class="number">2</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<p>布尔值可以用<code>and</code>、<code>or</code>、<code>not</code>运算</p>
+<pre><code>and运算是与运算</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="literal">True</span> <span class="keyword">and</span> <span class="literal">True</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="literal">True</span> <span class="keyword">and</span> <span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="literal">False</span> <span class="keyword">and</span> <span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">5</span> &gt; <span class="number">3</span> <span class="keyword">and</span> <span class="number">3</span> &gt; <span class="number">1</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">or是或运算</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="literal">True</span> <span class="keyword">or</span> <span class="literal">True</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="literal">True</span> <span class="keyword">or</span> <span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="literal">False</span> <span class="keyword">or</span> <span class="literal">False</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">5</span> &gt; <span class="number">3</span> <span class="keyword">or</span> <span class="number">1</span> &gt; <span class="number">3</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">not是非运算</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">not</span> <span class="literal">True</span></span><br><span class="line"><span class="literal">False</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">not</span> <span class="literal">False</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">not</span> <span class="number">1</span> &gt; <span class="number">2</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-空值："><a href="#4-空值：" class="headerlink" title="4.空值："></a>4.空值：</h2><p>空值是Python里一个特殊的值，用<code>None</code>表示。<code>None</code>与<code>0</code>和<code>空字符 &#39;  &#39;</code>不同，None表示什么都没有。==None与其他的数据类型比较均返回False==</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b=<span class="literal">None</span>    <span class="comment">#表示b没有内容 内容为空</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="二-变量"><a href="#二-变量" class="headerlink" title="二. 变量"></a>二. 变量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">变量名必须是英文字母、数字、和下划线（_）组成，且不能用数字开头</span><br><span class="line"></span><br><span class="line">变量名是区分大小写的，例如Score和score是不同的</span><br></pre></td></tr></table></figure>
+
+<p>python的变量不需要声明，可以直接使用赋值运算符对其进行赋值操作，根据所赋的值来决定其数据类型。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="string">"这是一个常量"</span></span><br><span class="line">b=a</span><br></pre></td></tr></table></figure>
+
+<p>此代码将变量a赋值给变量b，但以后对变量a的操作将不会影响到变量b。每个变量都对应一块内存空间，因此每一个变量都有一个内存空间。==变量赋值实际就是将该变量的地址取向赋值给它的常量或变量的地址==</p>
+<p>可以使用<code>id（）</code>函数输出变量地址</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">"这是一个变量"</span></span><br><span class="line">print(<span class="string">"变量str1的值是："</span>+ str1)</span><br><span class="line">print(<span class="string">"变量str1的地址是：%d"</span>%(id(str1)))</span><br><span class="line">str2 =str1</span><br><span class="line">print(<span class="string">"变量str2的值是："</span> +str2)</span><br><span class="line">print(<span class="string">"变量str2的地址是：%d"</span>%(id(str2)))</span><br><span class="line">str1=<span class="string">"这是另一个变量"</span></span><br><span class="line">print(<span class="string">"变量str1的值是："</span>+str1)</span><br><span class="line">print(<span class="string">"变量str1的地址是：%d"</span>%(id(str1)))</span><br><span class="line">print(<span class="string">"变量str2的值是："</span>+ str2)</span><br><span class="line">print(<span class="string">"变量str2的地址是：%d"</span>%(id(str2)))</span><br></pre></td></tr></table></figure>
+
+<p>运行结果</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">变量str1的值是：这是一个变量</span><br><span class="line">变量str1的地址是：<span class="number">25200696</span></span><br><span class="line">变量str2的值是：这是一个变量</span><br><span class="line">变量str2的地址是：<span class="number">25200696</span></span><br><span class="line">变量str1的值是：这是另一个变量</span><br><span class="line">变量str1的地址是：<span class="number">25200864</span></span><br><span class="line">变量str2的值是：这是一个变量</span><br><span class="line">变量str2的地址是：<span class="number">25200696</span></span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/15/my-first-blog/" data-id="cjzcaexqw0001f8v9uj5lh6bc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/15/my-first-blog/" data-id="cjzcbakbz0001p0v94iy36wr5" class="article-share-link">Share</a>
       
       
     </footer>
